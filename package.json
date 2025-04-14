@@ -5,7 +5,21 @@
   "repository": "git@github.com:RenatoBrunetti/fiap-postech-desafio-fase1-typescript.git",
   "author": "Renato Brunetti <recarapia@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch --env-file .env src/server.ts"
+  },
   "devDependencies": {
+    "@tsconfig/node22": "^22.0.1",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "fast-glob": "^3.3.3"
   }
 }
