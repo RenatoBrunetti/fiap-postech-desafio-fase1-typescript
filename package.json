@@ -1,0 +1,11 @@
+{
+  "name": "fiap-postech-desafio-fase1-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:RenatoBrunetti/fiap-postech-desafio-fase1-typescript.git",
+  "author": "Renato Brunetti <recarapia@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
