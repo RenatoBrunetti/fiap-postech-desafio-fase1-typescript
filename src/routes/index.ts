@@ -1,7 +1,7 @@
 import express, { Application, Router } from "express";
 import { join } from "path";
 
-import Health from "./health";
+import System from "./system";
 import Book from "./book";
 
 export default class Routes {
@@ -17,7 +17,7 @@ export default class Routes {
   }
 
   private routes() {
-    new Health(this.router);
+    new System(this.router);
     new Book(this.router);
   }
 }
