@@ -1,0 +1,23 @@
+services:
+  postgres-library:
+    image: postgres
+    container_name: postgres-library
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: library
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: postgres-library
+    ports:
+      - 5434:5432
+    volumes:
+      - postgres-library:/data/postgres
+    networks:
+      - library
+
+volumes:
+  postgres-library:
+    driver: local
+
+networks:
+  library:
+    external: true

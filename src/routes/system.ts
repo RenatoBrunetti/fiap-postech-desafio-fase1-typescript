@@ -1,6 +1,6 @@
 import { Router, Request, Response } from "express";
 
-export default class Health {
+export default class System {
   private router: Router;
 
   constructor(router: Router) {

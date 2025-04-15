@@ -17,3 +17,47 @@ Estrutura proposta para entidade Livro: cada livro pode possuir um título, auto
 ## Requisitos Técnicos
 
 Desenvolvimento do projeto utilizando a versão mais recente do TypeScript para garantir que o seu código esteja atualizado. Integração do sistema a um banco de dados que pode ser um NoSQL ou SQL. Neste cenário, você pode utilizar o Docker ou um banco de dados grátis como o PostgreSQL na plataforma Supabase.
+
+<br>
+<hr>
+<hr>
+
+## Docker Database
+
+### Make Commands
+
+- Run all containers<br>
+  `make build`
+
+- Stop all containers<br>
+  `make down`
+
+- Run individual container<br>
+  `make up container=container_name`
+
+- Stop individual container<br>
+  `make down container=container_name`
+
+- Add network<br>
+  `make add-network`
+
+- Remove network<br>
+  `make remove-network`
+
+### Docker Commands
+
+- Check network<br>
+  `docker network ls`
+
+- Remove network<br>
+  `docker network rm <network_name>`
+
+- List containers<br>
+  `docker ps -a`<br>
+  or `docker container ls`
+
+- List containers by PORT<br>
+  `docker ps --filter publish=<PORT>`
+
+- List containers by Network<br>
+  `docker ps --filter network=<network_name>`
